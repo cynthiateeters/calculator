@@ -32,7 +32,7 @@ This project requires [Node.js](https://nodejs.org/) to be installed on your sys
 To use the calculator, run the script with three arguments:
 
 ```bash
-node calculator.js number operator number
+npx calculator.js number operator number
 ```
 
 Examples:
