@@ -67,7 +67,7 @@ This project’s `package.json` is configured to include only the necessary file
 *   `LICENSE`
 *   `README.md`
 
-Once you have implemented the functionality and updated the details in `package.json` (i.e. replace `@yourname`, `yourusername`, and `Your Name`), you can login
+Once you have implemented the functionality and updated the details in `package.json`, `README.md` and `LICENSE` (i.e. replace `@yourname`, `yourusername`, or `Your Name`), you can login
 to NPM:
 
 ```bash
