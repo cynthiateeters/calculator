@@ -7,7 +7,7 @@ You are responsible for implementing the functionality in `calculator.js` as wel
 All tests in `tests/calculator.test.js` must pass.
 
 
-Before publishing the package to NPM, **replace**:
+Before anything else: **replace**:
 
 In `package.json`
 
@@ -24,19 +24,25 @@ In `README.md`
 
 ## Overview of the Steps Involved (see below for specifics)
 
-1. Insert code for the `stmnts-01.js` and `stmnts-01.js` files.
+1. After replacing fields in the `package.json` file and saving it.
 
-2. **See:** REQUIREMENTS.md file to review the requirements for the code in `calculator.js` needed to pass the tests.
+    ```bash
+    npm install
+    ```
 
-3. Implement the missing JavaScript code in `calculator.js`
+2. Insert code for the `stmnts-01.js` and `stmnts-01.js` files.
 
-4. Test until passing
+3. **See:** REQUIREMENTS.md file to review the requirements for the code in `calculator.js` needed to pass the tests.
 
-5. Lint the code
+34. Implement the missing JavaScript code in `calculator.js`
 
-6. NPM publish for public access
+5. Test until passing
 
-7. Commit and Push
+6. Lint the code
+
+7. NPM publish for public access
+
+8. Commit and Push
 
 ## Files in This Project (the ones that will be published)
 
@@ -44,9 +50,8 @@ In `README.md`
 *   `src/` – Contains source modules:
     *   `stmnts-01.js` – Should export functions: `add`, `subtract`, `times`, `divide`, `modulus`.
     *   `stmnts-02.js` – Should export the `power` function.
-*   `tests/calculator.test.js` – Contains Vitest tests to verify that your implementation works correctly.
 *   `LICENSE` – The MIT License for the project.
-*   `README.md` – This file.
+*   `README.md`
 *   `package.json` – The NPM package configuration file.
 
 
