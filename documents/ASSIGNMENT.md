@@ -2,31 +2,41 @@
 
 **Note for Students:**
 
-You are responsible for implementing the functionality in `calculator.js` as well as in the source modules found in `src/stmnts-01.js` (for addition, subtraction, multiplication, division, modulus) and `src/stmnts-02.js` (for power).
+You are responsible for implementing the functionality in `calculator.js` as well as providing the source modules found in `src/stmnts-01.js` (for addition, subtraction, multiplication, division, modulus) and `src/stmnts-02.js` (for power).
 
 All tests in `tests/calculator.test.js` must pass.
 
 
 Before publishing the package to NPM, **replace**:
 
+In `package.json`
+
 *   `@yourname` with your actual NPM account name in the package name.
      ** Be sure to retain the `@` per NPM's scope policy as explained below.
 *   `Your Name` with your real name in the author field.
 *   `yourusername` with your GitHub account name.
 
+In `README.md`
 
-## Steps
+*   `@yourname` with your actual NPM account name in the package name.
+     ** Be sure to retain the `@` per NPM's scope policy as explained below.
+
+
+## Overview of the Steps Involved (see below for specifics)
+
 1. Insert code for the `stmnts-01.js` and `stmnts-01.js` files.
 
-2. **See:** REQUIREMENTS.md file to review the requirements needed to pass the tests.
+2. **See:** REQUIREMENTS.md file to review the requirements for the code in `calculator.js` needed to pass the tests.
 
 3. Implement the missing JavaScript code in `calculator.js`
 
-4. Test
+4. Test until passing
 
-5. Lint
+5. Lint the code
 
-6. NPM Publish
+6. NPM publish for public access
+
+7. Commit and Push
 
 ## Files in This Project (the ones that will be published)
 
@@ -71,13 +81,13 @@ Once you have implemented the functionality and updated the details in `package.
 to NPM:
 
 ```bash
-npm publish
+npm login
 ```
 
-and publish your package with
+and publish your package with public access
 
 ```bash
-npm publish
+npm publish --access public
 ```
 
 ## NPM Scope
@@ -85,3 +95,5 @@ npm publish
 NPM Scopes provide a way to prevent package name conflicts by grouping packages under a unique namespace. When you publish a package with a scope—using the format `@yourname/package-name`—you ensure that your package's name is unique within your personal or organizational namespace.
 
 This approach protects against accidentally using a package name that has already been claimed in the public registry. By isolating your package names with a scope, you avoid violating any existing package names and maintain clear ownership and organization within the vast NPM ecosystem.
+
+When publishing a scoped package (i.e., a package with a name in the format @yourname/package-name), it's important to explicitly indicate that it is meant for public access. Scoped packages are private by default, so if you want your package to be available for everyone, you must include the --access public flag when you run the npm publish command. This ensures that your package is correctly set up for public use on the NPM registry.
